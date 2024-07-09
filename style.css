@@ -1,0 +1,273 @@
+.nav-bar {
+  background-color: rgb(1, 63, 1);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.2rem 0.5rem;
+  color: white;
+  height: 1.6rem;
+  font-size: 1.1rem;
+}
+
+.nav-bar a {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar a:hover {
+  background-color: rgb(6, 88, 6);
+}
+
+.top-section {
+  background-color: rgb(0, 136, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  height: 2.8rem;
+  color: white;
+  font-size: large;
+}
+
+.profile-logo {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.profile-logo ion-icon {
+  font-size: 3rem;
+  border-radius: 1rem;
+}
+
+.btn-submit {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  outline: none;
+  background-color: rgb(236, 84, 29);
+  width: 8%;
+  height: 80%;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+  font-size: large;
+}
+
+.btn-submit ion-icon {
+  font-size: 2rem;
+}
+
+.btn-submit:hover {
+  background-color: rgb(117, 36, 8);
+}
+
+.timer {
+  border: 1px solid wheat;
+  border-radius: 10px;
+  background-color: rgb(236, 84, 29);
+  width: 15%;
+  height: 25px;
+  color: white;
+  text-align: center;
+}
+
+.subjects {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* gap: 5px; */
+  width: 70%;
+  margin: 4px auto;
+  border-bottom: 1px solid black;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.subjects {
+  margin-top: 0.2rem;
+  /* background-color: rgb(13, 43, 3); */
+  color: rgb(110, 106, 106);
+  padding: 0rem 1rem;
+  border-radius: 20px 20px 0px 0px;
+  cursor: pointer;
+  /* margin-left: 5px; */
+}
+
+.maths,
+.english,
+.biology {
+  margin-top: 0.2rem;
+  margin-bottom: 0;
+  /* background-color: rgb(13, 43, 3); */
+  color: rgb(110, 106, 106);
+  padding: 0.2rem 1rem;
+  border-radius: 20px 20px 0px 0px;
+  cursor: pointer;
+  /* margin-left: 5px; */
+}
+
+.text-white {
+  color: #fff;
+}
+
+.questions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  width: 70%;
+  margin: 0 auto;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}
+
+.options form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 70%;
+  margin: 0 auto;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}
+form p {
+  margin: 0;
+  padding: 0;
+}
+
+.options input {
+  margin: 0 1rem;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  accent-color: black;
+}
+
+.btn-prev-next {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.btn-prev-next button {
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: 15%;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-next {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(40, 109, 40);
+  color: white;
+}
+
+.btn-next:hover {
+  background-color: rgb(17, 61, 17);
+  color: white;
+}
+
+.btn-previous {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(43, 43, 231);
+  color: white;
+}
+
+.btn-previous:hover {
+  background-color: rgb(14, 14, 168);
+  color: white;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 90px;
+  background-color: #131212;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size: 1rem;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 50%;
+  margin-left: -50px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #0a0404 transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.attempted-questions {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 5px auto;
+}
+
+.attempted-stats {
+  background-color: #555;
+  width: 20%;
+  height: 1.5rem;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+
+.attempted-stats p {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  width: 70%;
+  border: 1px solid black;
+  padding: 0px 25px 0px 0px;
+}
+
+td {
+  border: 1px solid rgb(59, 59, 59);
+  /* margin: 5px; */
+  /* padding: 5px; */
+  text-align: center;
+  /* cursor: pointer; */
+}
